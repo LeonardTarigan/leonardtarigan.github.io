@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Colors variable */
+:root {
+  --dark: #2d2d34;
+  --white: #e6e6e6;
+  --ruby: #e40066;
+  --orange: #ff9f1c;
+  --blue: #49c6e5;
+  --tosca: #3aafb9;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 20rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+h1 {
+  margin: 2rem 0 2rem;
+}
+
+button {
+  font-weight: 500;
+  background-color: var(--orange);
+  width: 7em;
+  height: 3em;
+  border-radius: 50px;
+  border: none;
+  box-shadow: inset 0 0 0 0 var(--ruby);
+  transition: ease-in-out 0.3s;
+}
+
+button:hover {
+  box-shadow: inset 7em 0 0 0 var(--ruby);
+  color: var(--white);
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+    margin-top: 25vh;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    padding: 0;
+    margin-top: 25vh;
+  }
+}
