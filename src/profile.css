@@ -10,6 +10,22 @@
   --tosca: #3aafb9;
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 9px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--ruby); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid var(--dark); /* creates padding around scroll thumb */
+}
+/* end of scrollbar */
+
 body {
   background-color: var(--dark);
 }
@@ -71,21 +87,32 @@ main {
   margin-top: 3rem;
 }
 
-.bio-card {
-  background-color: var(--white);
-  width: 100%;
-  border-radius: 20px;
-  display: flex;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+a {
+  color: var(--tosca);
+  text-decoration: none;
 }
 
-.bio-card img {
+a:hover {
+  color: var(--orange);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  color: var(--ruby);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.header img {
   width: 10rem;
   height: 10rem;
-  margin: 2rem 0 0 2rem;
+  margin-right: 2rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -93,12 +120,137 @@ main {
   -o-border-radius: 50%;
 }
 
-.bio-card h1 {
-  margin: 2rem 0 0;
+h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about {
+  text-align: justify;
+  color: var(--white);
+  padding: 0 7rem 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-  color: var(--dark);
-  padding: 3rem 0 0;
+  margin-bottom: 5rem;
+}
+
+.hobbies {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards-item {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20px;
+  background-size: cover;
+  margin: 0 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.cards-item:hover {
+  transform: scale(1.1);
+  color: transparent;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.music {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/electric_guitar.jpg);
+}
+
+.music:hover {
+  background-image: url(/img/electric_guitar.jpg);
+}
+
+.sports {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/basketball.jpg);
+}
+
+.sports:hover {
+  background-image: url(/img/basketball.jpg);
+}
+
+.design {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/design.jpg);
+}
+
+.design:hover {
+  background-image: url(/img/design.jpg);
+}
+
+.coding {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/coding.jpg);
+}
+
+.coding:hover {
+  background-image: url(/img/coding.jpg);
+}
+
+.gaming {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(/img/gaming.jpg);
+}
+
+.gaming:hover {
+  background-image: url(/img/gaming.jpg);
 }
 /* end of main */
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    margin-bottom: 2rem;
+  }
+
+  .about {
+    padding: 0 1.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .about {
+    padding: 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    margin-bottom: 2rem;
+  }
+}
