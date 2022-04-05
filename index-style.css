@@ -76,6 +76,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.hello {
+  color: var(--orange);
+}
+
 .name {
   color: var(--ruby);
   font-family: "Montserrat", sans-serif;
