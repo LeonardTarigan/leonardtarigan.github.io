@@ -115,11 +115,11 @@ body {
 
 .icon:hover {
   fill: var(--blue);
-  transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  -o-transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.3);
+  -webkit-transform: translateY(-5px) scale(1.3);
+  -moz-transform: translateY(-5px) scale(1.3);
+  -ms-transform: translateY(-5px) scale(1.3);
+  -o-transform: translateY(-5px) scale(1.3);
 }
 
 .icon:active {
