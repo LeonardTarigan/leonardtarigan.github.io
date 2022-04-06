@@ -180,7 +180,7 @@ h2 {
   color: var(--white);
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .cards {
@@ -296,4 +296,9 @@ h2 {
   .header img {
     margin-bottom: 2rem;
   }
+}
+
+.gears {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
 }
