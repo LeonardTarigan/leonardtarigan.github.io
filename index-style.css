@@ -106,16 +106,20 @@ body {
   height: 2rem;
   margin: 5rem 3rem 0 auto;
   fill: var(--white);
+  transition: all 0.2s !important;
+  -webkit-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  -ms-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
 }
 
 .icon:hover {
   fill: var(--blue);
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 
 .icon:active {
