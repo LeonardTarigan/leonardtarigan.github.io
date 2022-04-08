@@ -67,20 +67,21 @@ body {
 
 /* main */
 main {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 3rem;
 }
 
 .box {
   width: 20rem;
   height: 20rem;
+  margin: 0 1.5rem;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   padding: 0;
   border-radius: 20px;
   transition: all 0.3s;
@@ -137,3 +138,13 @@ main a {
   font-size: 0.8rem;
 }
 /* end of main */
+
+@media only screen and (max-width: 1200px) {
+  .row {
+    justify-content: center;
+  }
+
+  .box {
+    margin: 0 1rem;
+  }
+}
