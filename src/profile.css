@@ -150,7 +150,6 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 1.5rem 0 0;
-  opacity: 0.7;
 }
 
 .java img {
@@ -163,7 +162,11 @@ h2 {
   width: 2.5rem;
 }
 
-.icon:hover {
+.icon img {
+  opacity: 0.7;
+}
+
+.icon img:hover {
   animation: bounce 0.4s;
   opacity: 1;
   -webkit-animation: bounce 0.4s;
@@ -195,7 +198,7 @@ h2 {
   }
 }
 
-.icon:active {
+.icon img:active {
   transform: scale(0.9) translateY(10px);
   -webkit-transform: scale(0.9) translateY(10px);
   -moz-transform: scale(0.9) translateY(10px);
