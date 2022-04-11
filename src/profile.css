@@ -239,6 +239,7 @@ h2 {
 .cards-item:hover {
   transform: scale(1.1);
   color: transparent;
+  cursor: pointer;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -288,6 +289,56 @@ h2 {
 
 .gaming:hover {
   background-image: url(/img/gaming.jpg);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0.5rem 2rem 2rem;
+  width: 60%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.close-btn {
+  text-align: end;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--ruby);
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 /* end of main */
 
