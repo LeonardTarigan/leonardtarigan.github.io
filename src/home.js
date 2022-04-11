@@ -6,6 +6,11 @@ var typed = new Typed('.hello', {
     loop: true,
 });
 
+//loader
+$(window).on('load', function () {
+    $(".loader").fadeOut(300);
+    $(".content").fadeIn(700);
+});
 
 
 

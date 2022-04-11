@@ -14,6 +14,26 @@ body {
   background-color: var(--dark);
 }
 
+main {
+  animation: fadeIn ease 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation: fadeIn ease 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.active {
+  color: var(--white) !important;
+}
+
 /* navbar */
 .navbar {
   background-color: var(--dark) !important;

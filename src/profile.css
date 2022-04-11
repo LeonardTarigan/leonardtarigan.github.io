@@ -2,6 +2,7 @@
 
 /* Colors variable */
 :root {
+  --grey: #7d7d7eb0;
   --dark: #2d2d34;
   --white: #e6e6e6;
   --ruby: #e40066;
@@ -20,14 +21,18 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--ruby); /* color of the scroll thumb */
+  background-color: var(--grey); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
-  border: 2px solid var(--dark); /* creates padding around scroll thumb */
+  border: 3.5px solid var(--dark); /* creates padding around scroll thumb */
 }
 /* end of scrollbar */
 
 body {
   background-color: var(--dark);
+}
+
+.active {
+  color: var(--white) !important;
 }
 
 /* navbar */
@@ -86,6 +91,19 @@ body {
 main {
   margin-top: 5rem;
   font-family: "Montserrat", sans-serif;
+  animation: fadeIn ease 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation: fadeIn ease 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -291,55 +309,6 @@ h2 {
   background-image: url(/img/gaming.jpg);
 }
 
-/* The Modal (background) */
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-} */
-
-/* Modal Content */
-/* .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0.5rem 2rem 2rem;
-  width: 60%;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
-.close-btn {
-  text-align: end;
-} */
-
-/* The Close Button */
-/* .close {
-  color: #aaaaaa;
-
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--ruby);
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-} */
 /* end of main */
 
 /* media queries */
