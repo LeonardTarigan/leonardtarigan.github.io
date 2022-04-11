@@ -232,3 +232,9 @@ a {
     height: 20rem;
   }
 }
+
+@media only screen and (max-width: 991.5px) {
+  .navbar-nav {
+    margin: 0 !important;
+  }
+}
