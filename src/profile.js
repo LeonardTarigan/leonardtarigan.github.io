@@ -1,5 +1,5 @@
 const text = $("#desc");
-let words = ["Frontend enthusiast", "Ambivert", "Student"];
+let words = ["Frontend enthusiast", "Lifetime learner", "Student"];
 let i = 0;
 
 setInterval(function () {
