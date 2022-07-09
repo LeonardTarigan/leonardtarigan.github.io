@@ -88,10 +88,10 @@ main {
   }
 }
 
-.row {
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   row-gap: 3rem;
 }
 
@@ -114,11 +114,11 @@ main {
 }
 
 .box:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .box:active {
@@ -129,9 +129,8 @@ main {
   -o-transform: translateY(5px);
 }
 
-.bg {
-  background-image: url(../img/bmi.jpg);
-  background-position: center;
+.pic img {
+  width: 20rem;
   height: 12rem;
   background-size: cover;
   margin: 0;
